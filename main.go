@@ -56,6 +56,8 @@ var (
 
 	holder    = flag.String("c", "Google LLC", "copyright holder")
 	project    = flag.String("p", "Foobar", "project name")
+	description    = flag.String("d", "", "project breif description")
+	contact    = flag.String("t", "", "contact information: email")
 	license   = flag.String("l", "gpl", "license type: gpl, apache, bsd, mit, mpl")
 	licensef  = flag.String("f", "", "license file")
 	year      = flag.String("y", fmt.Sprint(time.Now().Year()), "copyright year(s)")
@@ -135,6 +137,8 @@ func main() {
 		Year:   *year,
 		Project: *project,
 		Holder: *holder,
+		Description: *description,
+		Contact: *contact,
 		SPDXID: *license,
 	}
 
