@@ -1,4 +1,4 @@
-# addlicense
+# [addlic](https://github.com/MAHcodes/addlic) is a fork of [addlicense](https://github.com/google/addlicense) that supports GPL as described [here](https://www.gnu.org/licenses/gpl-3.0.html#howto)
 
 The program ensures source code files have copyright license headers
 by scanning directory patterns recursively.
