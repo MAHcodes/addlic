@@ -55,7 +55,8 @@ var (
 	spdx               spdxFlag
 
 	holder    = flag.String("c", "Google LLC", "copyright holder")
-	license   = flag.String("l", "apache", "license type: apache, bsd, mit, mpl")
+	project    = flag.String("p", "", "project name")
+	license   = flag.String("l", "gpl", "license type: gpl, apache, bsd, mit, mpl")
 	licensef  = flag.String("f", "", "license file")
 	year      = flag.String("y", fmt.Sprint(time.Now().Year()), "copyright year(s)")
 	verbose   = flag.Bool("v", false, "verbose mode: print the name of the files that are modified or were skipped")
@@ -132,6 +133,7 @@ func main() {
 
 	data := licenseData{
 		Year:   *year,
+		Project: *project,
 		Holder: *holder,
 		SPDXID: *license,
 	}
