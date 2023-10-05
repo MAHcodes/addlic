@@ -55,7 +55,7 @@ var (
 	spdx               spdxFlag
 
 	holder    = flag.String("c", "Google LLC", "copyright holder")
-	project    = flag.String("p", "", "project name")
+	project    = flag.String("p", "Foobar", "project name")
 	license   = flag.String("l", "gpl", "license type: gpl, apache, bsd, mit, mpl")
 	licensef  = flag.String("f", "", "license file")
 	year      = flag.String("y", fmt.Sprint(time.Now().Year()), "copyright year(s)")
